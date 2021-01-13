@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-int sifre;	          	  //sifre --> sizin belirleyeceğiiz banka şifresidir
-int sifre_control;		  //sifre_control --> belirledğiğiniz şifrenin tekrar girip doğruluğunun kontrol edileceği değişkendir.
-int islem_no;		      //islem_no --> seçeceğiniz işlem numarasıdır
-int bakiye;		          //bakiye --> banka hesabinizda bulunan sizin belirleyeceğiniz bakiye miktaridir
-int tutar;         		  //tutar --> banka işlemlerinde kullanacağınız para miktarıdır
-int devam;		 	      //devam --> hesaptan çıkış yapıp yapılmayacağını soran değişkendir
+int sifre;	          	  //sifre --> sizin belirleyeceÄŸiiz banka ÅŸifresidir
+int sifre_control;		  //sifre_control --> belirledÄŸiÄŸiniz ÅŸifrenin tekrar girip doÄŸruluÄŸunun kontrol edileceÄŸi deÄŸiÅŸkendir.
+int islem_no;		      	  //islem_no --> seÃ§eceÄŸiniz iÅŸlem numarasÄ±dÄ±r
+int bakiye;		          //bakiye --> banka hesabinizda bulunan sizin belirleyeceÄŸiniz bakiye miktaridir
+int tutar;         		  //tutar --> banka iÅŸlemlerinde kullanacaÄŸÄ±nÄ±z para miktarÄ±dÄ±r
+int devam;		 	  //devam --> hesaptan Ã§Ä±kÄ±ÅŸ yapÄ±p yapÄ±lmayacaÄŸÄ±nÄ± soran deÄŸiÅŸkendir
 
-void Islemler()		 // Banka işlemlerini ekrana yazdıran fonksiyondur
+void Islemler()		 // Banka iÅŸlemlerini ekrana yazdÄ±ran fonksiyondur
 {
 	printf("\n-------------\nIslemler\n-------------\n1-Bakiye Sorgulama\n2-Para Cekme\n3-Para Yatirma\n4-Cikis Yap\n-------------\n");
 	printf("Yapmak Istediginiz Islemi Tuslayiniz: ");
 	scanf("%d",&islem_no);
 }
 
-void AltIslemler()	  //Bir işlem seçildikten sonra bu fonksiyon devreye girer ve hangi işlemde ne yapılacağı gösterilir
+void AltIslemler()	  //Bir iÅŸlem seÃ§ildikten sonra bu fonksiyon devreye girer ve hangi iÅŸlemde ne yapÄ±lacaÄŸÄ± gÃ¶sterilir
 {		
 	Islemler();
 		
@@ -104,7 +104,7 @@ void AltIslemler()	  //Bir işlem seçildikten sonra bu fonksiyon devreye girer ve
 			}
 }
 
-	void SifreKontrol()		// Şifrenizin doğruluğunu kontrol eder, eğer yanlışsa hesaba girilemez, 3 kere yanlış şifre girildiğinde kart bloklanır
+	void SifreKontrol()		// Åifrenizin doÄŸruluÄŸunu kontrol eder, eÄŸer yanlÄ±ÅŸsa hesaba girilemez, 3 kere yanlÄ±ÅŸ ÅŸifre girildiÄŸinde kart bloklanÄ±r
 	{		
 		printf("Sifreniz Yanlis Lutfen Tekrar Deneyiniz\n");
 		printf("Lutfen Sifrenizi Giriniz: ");
