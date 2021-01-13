@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sifre;	          	  //sifre --> sizin belirleyeceğiiz banka şifresidir
+int sifre;	          //sifre --> sizin belirleyeceğiiz banka şifresidir
 int sifre_control;		  //sifre_control --> belirledğiğiniz şifrenin tekrar girip doğruluğunun kontrol edileceği değişkendir.
 int islem_no;		      	  //islem_no --> seçeceğiniz işlem numarasıdır
 int bakiye;		          //bakiye --> banka hesabinizda bulunan sizin belirleyeceğiniz bakiye miktaridir
